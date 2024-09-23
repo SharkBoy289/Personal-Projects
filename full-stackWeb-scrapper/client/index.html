@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Setup Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Setup-finder</h1>
+    <h4>Add a new creator</h4>
+    <input class="channel-input" type="text" placeholder="Paste YouTube URL"/>
+    <button type="submit" onclick="submitChannel()">Submit</button>
+
+    <div class="container"></div>
+
+    <script>
+        function submitChannel() {
+            const channelURL = document.querySelector('.channel-input').value;
+            fetch('http://localhost:3000/creators', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ channelURL })    
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                window.location.reload();
+            });
+        };
+
+        function newEl(type, attrs={}) {
+            const el = document.createElement(type);
+            for (let attr in attrs) {
+                const value = attrs[attr];
+                if (attr === 'innerText') el.innerText = value;
+                else el.setAttribute(attr, value);
+            }
+            return el;
+        }
+
+        async function loadCreators() {
+            const res = await fetch('http://localhost:3000/creators');
+            const creators = await res.json(); 
+
+            const ctr = document.querySelector('.container');
+        
+            creators.forEach(creator => {
+                const card = newEl('div', {class: 'card'});
+                const title = newEl('h4', {innerText: creator.name});
+                const img = newEl('img', {src: creator.img});
+                const deleteButton = newEl('button', {class: 'delete-button', innerText: 'X'});
+                const detailsButton = newEl('button', {class: 'details-button', innerText: 'Details'});
+                
+                card.appendChild(title);
+                card.appendChild(img);
+                card.appendChild(deleteButton);
+                card.appendChild(detailsButton);
+                ctr.appendChild(card);
+            });
+        }
+
+        loadCreators();
+    </script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            margin: 5px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .delete-button, .details-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .delete-button {
+            background-color: red;
+            color: white;
+        }
+        .details-button {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</body>
+</html>

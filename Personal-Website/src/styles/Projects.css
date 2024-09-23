@@ -72,3 +72,12 @@
     height: 300px;
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .projects h1 {
+    color: white;
+  }
+  .projectItem h1 {
+    color: black;
+  }
+}

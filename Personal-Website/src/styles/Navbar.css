@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit');
+
 .navbar {
   width: 100%;
   height: 100px;
   background: #21325e;
+  font-family: 'Outfit', sans-serif; /* Apply the Outfit font here */
 }
 
 .links {
@@ -11,13 +14,23 @@
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: #162257;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-.navbar a {
+
+
+.links a {
+  padding: 10px 20px;
+  margin: 0 10px;
   color: white;
   text-decoration: none;
-  margin: 20px;
   font-size: 25px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.links a:hover {
+  background-color: #3c497c;
 }
 
 .toggleButton {
@@ -28,19 +41,17 @@
   justify-content: flex-end;
 }
 
-.toggleButton svg {
-  font-size: 50px;
-}
 .toggleButton button {
   margin-right: 20px;
   background-color: transparent;
   border: none;
   color: white;
   cursor: pointer;
+  font-size: 50px;
 }
 
 #open {
-  height: 100vh;
+  height: 330px;
 }
 
 #open .links {
@@ -56,7 +67,7 @@
 
 @media only screen and (max-width: 900px) {
   .navbar a {
-    width: 70px;
+    font-size: 20px;
   }
 }
 
@@ -64,8 +75,8 @@
   .toggleButton {
     display: flex;
   }
-  #close a {
-    display: none;
+  #close .links a {
+    display: none; /* Ensure this is specific enough to target the correct element state */
   }
 }
 
@@ -73,16 +84,8 @@
   .toggleButton {
     display: none;
   }
-
-  .hiddenLinks {
-    display: none;
-  }
-
-  #open {
-    height: 100px;
-  }
-
-  #open .links {
-    flex-direction: row;
+  #close .links a, #open .links a {
+    display: block; /* Make sure links are visible when appropriate */
   }
 }
+
