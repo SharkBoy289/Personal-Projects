@@ -1,6 +1,6 @@
 import ProjectsGrid from "@/components/ProjectsGrid";
 
-export const metadata = { title: "Projects — Your Name" };
+export const metadata = { title: "Projects" };
 
 export default function ProjectsPage() {
   return (
