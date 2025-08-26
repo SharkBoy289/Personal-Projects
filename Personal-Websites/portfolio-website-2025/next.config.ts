@@ -6,7 +6,8 @@ const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-inline' https://vercel.live;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-  font-src 'self' https://fonts.gstatic.com;
+  font-src 'self' https://fonts.gstatic.com data:;
+  frame-src 'self' https://vercel.live;
 `;
 
 const nextConfig: NextConfig = {
