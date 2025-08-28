@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <button
-            className="rounded bg-white p-2 text-black transition-colors hover:bg-amber-100 sm:hidden dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800"
+            className="rounded bg-white/70 p-2 text-black transition-colors hover:bg-amber-100 sm:hidden dark:bg-neutral-900/70 dark:text-neutral-100 dark:hover:bg-neutral-800"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
           >
@@ -35,7 +35,7 @@ export default function Header() {
             <li>
               <Link
                 href="/about"
-                className="relative block rounded bg-white px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300 sm:bg-white/70 sm:dark:bg-neutral-900/70"
+                className="relative block rounded bg-white/70 px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900/70 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300"
               >
                 About Me
               </Link>
@@ -43,7 +43,7 @@ export default function Header() {
             <li>
               <Link
                 href="/projects"
-                className="relative block rounded bg-white px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300 sm:bg-white/70 sm:dark:bg-neutral-900/70"
+                className="relative block rounded bg-white/70 px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900/70 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300"
               >
                 Projects
               </Link>
@@ -51,7 +51,7 @@ export default function Header() {
             <li>
               <Link
                 href="/timeline"
-                className="relative block rounded bg-white px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300 sm:bg-white/70 sm:dark:bg-neutral-900/70"
+                className="relative block rounded bg-white/70 px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900/70 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300"
               >
                 Timeline
               </Link>
@@ -59,7 +59,7 @@ export default function Header() {
             <li>
               <Link
                 href="/contact"
-                className="relative block rounded bg-white px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300 sm:bg-white/70 sm:dark:bg-neutral-900/70"
+                className="relative block rounded bg-white/70 px-3 py-2 text-black transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:bg-neutral-900/70 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-amber-300"
               >
                 Contact
               </Link>
