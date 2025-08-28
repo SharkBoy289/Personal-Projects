@@ -28,7 +28,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label="Toggle dark mode"
-      className="ml-4 rounded p-2 transition-colors hover:bg-black/5 dark:hover:bg-white/10"
+      className="ml-4 rounded p-2 transition-colors duration-200 hover:bg-black/5 dark:hover:bg-white/10"
     >
       {dark ? "🌙" : "☀️"}
     </button>
