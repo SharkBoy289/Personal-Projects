@@ -1,12 +1,18 @@
 import ProjectsGrid from "@/components/ProjectsGrid";
 
-export const metadata = { title: "Projects — Your Name" };
+export const metadata = { title: "My Work — Artem" };
 
 export default function ProjectsPage() {
   return (
-    <div className="py-12 space-y-6">
-      <h1 className="text-2xl font-semibold">Projects</h1>
+    <section className="space-y-8 py-12">
+      <div className="space-y-2">
+        <h1 className="text-3xl font-bold">My Work</h1>
+        <p className="text-neutral-600">
+          A selection of projects and internships showcasing full-stack
+          capabilities.
+        </p>
+      </div>
       <ProjectsGrid />
-    </div>
+    </section>
   );
 }
