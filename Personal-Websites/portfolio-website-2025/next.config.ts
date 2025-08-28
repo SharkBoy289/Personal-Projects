@@ -6,10 +6,23 @@ const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-inline' https://vercel.live;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  img-src 'self' https://images.unsplash.com https://placehold.co data:;
   font-src 'self' https://fonts.gstatic.com data:;
 `;
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+      },
+    ],
+  },
   async headers() {
     return [
       {
