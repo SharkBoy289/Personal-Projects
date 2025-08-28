@@ -11,7 +11,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
       <div className="grid gap-8 md:grid-cols-3">
         <div className="md:col-span-2">
           <h1 className="text-4xl font-bold">{project.title}</h1>
-          <p className="mt-4 text-lg text-neutral-700 dark:text-neutral-300">
+          <p className="mt-4 text-lg text-amber-800 dark:text-neutral-300">
             {project.description}
           </p>
         </div>
@@ -19,7 +19,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
           <h2 className="text-xl font-semibold">
             {project.type === "internship" ? "Roles" : "Goals"}
           </h2>
-          <ul className="mt-3 list-disc pl-4 text-neutral-700 dark:text-neutral-300">
+          <ul className="mt-3 list-disc pl-4 text-amber-800 dark:text-neutral-300">
             {project.details.map((d) => (
               <li key={d}>{d}</li>
             ))}

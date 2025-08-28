@@ -11,7 +11,7 @@ export default function TimelinePage() {
         {items.map((item) => (
           <li key={item.slug} className="relative mb-8 last:mb-0">
             <span className="absolute -left-3 top-1 h-3 w-3 rounded-full bg-blue-600"></span>
-            <time className="text-sm text-neutral-500">{item.year}</time>
+            <time className="text-sm text-amber-700">{item.year}</time>
             <div>
               <Link
                 href={`/projects/${item.slug}`}
@@ -19,7 +19,7 @@ export default function TimelinePage() {
               >
                 {item.title}
               </Link>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
+              <p className="text-sm text-amber-800 dark:text-neutral-400">
                 {item.scope}
               </p>
             </div>

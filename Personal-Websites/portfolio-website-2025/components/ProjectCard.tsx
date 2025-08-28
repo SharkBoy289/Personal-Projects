@@ -14,14 +14,14 @@ export default function ProjectCard({ p }: { p: Project }) {
         <h3 className="font-medium transition-colors group-hover:text-blue-600">
           {p.title}
         </h3>
-        <span className="text-xs text-neutral-500 group-hover:text-neutral-700 dark:group-hover:text-neutral-300">
+        <span className="text-xs text-amber-700 group-hover:text-amber-900 dark:group-hover:text-amber-300">
           {p.year}
         </span>
       </div>
-      <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+      <p className="mt-2 text-sm text-amber-800 dark:text-neutral-300">
         {p.blurb}
       </p>
-      <div className="mt-3 flex flex-wrap gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+      <div className="mt-3 flex flex-wrap gap-2 text-xs text-amber-800 dark:text-neutral-400">
         {p.tags.map((t) => (
           <span
             key={t}

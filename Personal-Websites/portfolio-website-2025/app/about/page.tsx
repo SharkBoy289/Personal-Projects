@@ -53,7 +53,7 @@ export default function AboutPage() {
         />
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-bold">Hi, I&apos;m Artem</h1>
-          <p className="mt-4 text-lg text-neutral-700 dark:text-neutral-300">
+          <p className="mt-4 text-lg text-amber-800 dark:text-neutral-300">
             I&apos;m a developer who loves crafting polished user experiences and
             solving real‑world problems with code.
           </p>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 className="mx-auto h-40 w-full rounded object-cover"
               />
               <h3 className="mt-4 font-medium">{s.title}</h3>
-              <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              <p className="mt-2 text-sm text-amber-800 dark:text-neutral-400">
                 {s.desc}
               </p>
             </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
           {process.map((p) => (
             <div key={p.step} className="rounded-lg border p-4">
               <h3 className="font-medium">{p.step}</h3>
-              <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              <p className="mt-2 text-sm text-amber-800 dark:text-neutral-400">
                 {p.text}
               </p>
             </div>

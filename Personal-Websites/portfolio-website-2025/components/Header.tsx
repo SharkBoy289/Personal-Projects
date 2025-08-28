@@ -15,55 +15,55 @@ export default function Header() {
       <nav className="mx-auto flex max-w-5xl items-center justify-between p-4">
         <Link
           href="/"
-          className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text font-bold text-transparent"
+          className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text font-bold text-transparent transition-opacity hover:opacity-80"
         >
           Artem
         </Link>
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <button
-            className="sm:hidden"
+            className="rounded p-2 transition-colors hover:bg-amber-100 sm:hidden dark:hover:bg-neutral-800"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
           >
             ☰
           </button>
           <ul
-            className={`${open ? "block" : "hidden"} absolute left-0 right-0 top-full mt-2 flex flex-col gap-4 bg-white p-4 text-sm shadow sm:static sm:mt-0 sm:flex sm:flex-row sm:gap-6 sm:bg-transparent sm:p-0 sm:shadow-none dark:bg-neutral-900 sm:dark:bg-transparent`}
+            className={`${open ? "block" : "hidden"} absolute left-0 right-0 top-full mt-2 flex flex-col gap-2 bg-white p-4 text-sm text-amber-800 shadow transition-colors dark:bg-neutral-900 dark:text-neutral-100 sm:static sm:mt-0 sm:flex sm:flex-row sm:gap-6 sm:bg-transparent sm:p-0 sm:text-inherit sm:shadow-none`}
             onClick={() => setOpen(false)}
           >
-          <li>
-            <Link
-              href="/about"
-              className="relative px-1 py-0.5 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/projects"
-              className="relative px-1 py-0.5 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/timeline"
-              className="relative px-1 py-0.5 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              Timeline
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className="relative px-1 py-0.5 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              Contact
-            </Link>
-          </li>
+            <li>
+              <Link
+                href="/about"
+                className="relative block rounded px-3 py-2 transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:hover:bg-neutral-800 dark:hover:text-amber-300"
+              >
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects"
+                className="relative block rounded px-3 py-2 transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:hover:bg-neutral-800 dark:hover:text-amber-300"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/timeline"
+                className="relative block rounded px-3 py-2 transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:hover:bg-neutral-800 dark:hover:text-amber-300"
+              >
+                Timeline
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="relative block rounded px-3 py-2 transition-colors hover:bg-amber-100 hover:text-amber-700 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gradient-to-r from-blue-500 to-purple-500 after:transition-all after:duration-300 hover:after:w-full dark:hover:bg-neutral-800 dark:hover:text-amber-300"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
