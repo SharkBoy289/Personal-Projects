@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center gap-6 text-center">
       <h1 className="text-5xl font-bold">Artem</h1>
-      <p className="max-w-xl text-lg text-amber-800 dark:text-neutral-300">
+      <p className="max-w-xl text-lg text-black dark:text-neutral-300">
         Full‑stack developer crafting fast, responsive experiences across the
         web.
       </p>

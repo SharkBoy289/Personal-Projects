@@ -14,7 +14,7 @@ export default function TimelinePage() {
             className="relative mb-8 last:mb-0 lg:mb-0 lg:flex-1"
           >
             <span className="absolute -left-3 top-1 h-3 w-3 rounded-full bg-blue-600 lg:left-1/2 lg:top-0 lg:-translate-x-1/2 lg:-translate-y-1/2"></span>
-            <time className="text-sm text-amber-700 lg:block lg:text-center">
+            <time className="text-sm text-black dark:text-neutral-400 lg:block lg:text-center">
               {item.year}
             </time>
             <div className="lg:mt-2 lg:text-center">
@@ -24,7 +24,7 @@ export default function TimelinePage() {
               >
                 {item.title}
               </Link>
-              <p className="text-sm text-amber-800 dark:text-neutral-400">
+              <p className="text-sm text-black dark:text-neutral-400">
                 {item.scope}
               </p>
             </div>

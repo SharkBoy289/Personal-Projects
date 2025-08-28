@@ -56,7 +56,7 @@ export default function ContactPage() {
 
       <div>
         <h1 className="text-3xl font-bold">Work with me</h1>
-        <p className="mt-4 text-amber-800 dark:text-neutral-300">
+        <p className="mt-4 text-black dark:text-neutral-300">
           I&apos;m a graduate excited to take on full‑stack development challenges
           and always eager to learn new skills.
         </p>

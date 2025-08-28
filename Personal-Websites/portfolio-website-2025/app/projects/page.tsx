@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     <section className="mx-auto max-w-5xl space-y-8 p-4 sm:p-8">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">My Work</h1>
-        <p className="text-lg text-amber-800 dark:text-neutral-300">
+        <p className="text-lg text-black dark:text-neutral-300">
           A selection of past projects and internships.
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
               alt={p.title}
               width={500}
               height={300}
-              className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute inset-0 flex flex-col justify-end bg-black/40 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <h3 className="text-lg font-semibold text-white">{p.title}</h3>
