@@ -29,7 +29,7 @@ export default function Header() {
             ☰
           </button>
           <ul
-            className={`${open ? "block" : "hidden"} absolute left-0 right-0 top-full mt-2 flex flex-col gap-2 bg-white p-4 text-sm text-black shadow transition-colors dark:bg-neutral-900 dark:text-neutral-100 sm:static sm:mt-0 sm:flex sm:flex-row sm:gap-6 sm:bg-transparent sm:p-0 sm:text-inherit sm:shadow-none`}
+            className={`${open ? "block" : "hidden"} absolute left-0 right-0 top-full mt-2 flex flex-col gap-2 bg-white p-4 text-sm text-black shadow transition-colors dark:bg-neutral-900 dark:text-neutral-100 sm:static sm:mt-0 sm:flex sm:flex-row sm:gap-6 sm:bg-transparent sm:p-0 sm:shadow-none sm:dark:bg-transparent`}
             onClick={() => setOpen(false)}
           >
             <li>

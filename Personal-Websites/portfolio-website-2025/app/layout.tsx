@@ -25,6 +25,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+(function () {
+  try {
+    var stored = localStorage.getItem('theme');
+    var mql = window.matchMedia('(prefers-color-scheme: dark)');
+    var dark = stored ? stored === 'dark' : mql.matches;
+    var c = document.documentElement.classList;
+    if (dark) c.add('dark'); else c.remove('dark');
+  } catch (_) {}
+})();
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-black dark:text-neutral-100 transition-colors duration-300`}
       >
