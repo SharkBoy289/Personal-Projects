@@ -5,9 +5,9 @@ export default function TimelinePage() {
   const items = [...work].sort((a, b) => Number(b.year) - Number(a.year));
 
   return (
-    <section className="mx-auto max-w-5xl space-y-8 p-4 sm:p-8">
+    <section className="mx-auto max-w-screen-xl space-y-8 p-4 sm:p-8">
       <h1 className="text-4xl font-bold">Timeline</h1>
-      <ol className="border-l-2 pl-6 lg:flex lg:border-l-0 lg:border-t-2 lg:pl-0 lg:pt-6">
+      <ol className="border-l-2 pl-6 lg:flex lg:border-l-0 lg:border-t-2 lg:pl-0 lg:pt-6 xl:gap-8">
         {items.map((item) => (
           <li
             key={item.slug}
