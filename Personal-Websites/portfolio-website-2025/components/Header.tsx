@@ -15,7 +15,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-5xl items-center justify-between p-4">
         <Link
           href="/"
-          className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text font-bold text-transparent transition-opacity hover:opacity-80"
+          className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text font-bold text-transparent transition-opacity hover:opacity-80"
         >
           Artem
         </Link>
@@ -29,7 +29,7 @@ export default function Header() {
             ☰
           </button>
           <ul
-            className={`${open ? "block" : "hidden"} absolute left-0 right-0 top-full mt-2 flex flex-col gap-2 bg-white p-4 text-sm text-black shadow transition-colors dark:bg-neutral-900 dark:text-neutral-100 sm:static sm:mt-0 sm:flex sm:flex-row sm:gap-6 sm:bg-transparent sm:p-0 sm:text-inherit sm:shadow-none`}
+            className={`${open ? "block" : "hidden"} absolute left-0 right-0 top-full mt-2 flex flex-col gap-2 bg-white p-4 text-sm text-black shadow transition-colors sm:static sm:mt-0 sm:flex sm:flex-row sm:gap-6 sm:bg-transparent sm:p-0 sm:text-inherit sm:shadow-none`}
             onClick={() => setOpen(false)}
           >
             <li>

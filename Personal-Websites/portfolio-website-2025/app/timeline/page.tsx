@@ -24,7 +24,7 @@ export default function TimelinePage() {
               >
                 {item.title}
               </Link>
-              <p className="text-sm text-amber-800 dark:text-neutral-400">
+              <p className="text-sm text-amber-800 dark:text-neutral-500">
                 {item.scope}
               </p>
             </div>

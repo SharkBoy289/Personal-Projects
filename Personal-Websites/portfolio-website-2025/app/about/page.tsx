@@ -53,7 +53,7 @@ export default function AboutPage() {
         />
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-bold">Hi, I&apos;m Artem</h1>
-          <p className="mt-4 text-lg text-amber-800 dark:text-neutral-300">
+          <p className="mt-4 text-lg">
             I&apos;m a developer who loves crafting polished user experiences and
             solving real‑world problems with code.
           </p>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 className="mx-auto h-40 w-full rounded object-cover"
               />
               <h3 className="mt-4 font-medium">{s.title}</h3>
-              <p className="mt-2 text-sm text-amber-800 dark:text-neutral-400">
+              <p className="mt-2 text-sm">
                 {s.desc}
               </p>
             </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
           {process.map((p) => (
             <div key={p.step} className="rounded-lg border p-4">
               <h3 className="font-medium">{p.step}</h3>
-              <p className="mt-2 text-sm text-amber-800 dark:text-neutral-400">
+              <p className="mt-2 text-sm">
                 {p.text}
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
         <h2 className="mb-6 text-2xl font-semibold">Testimonials</h2>
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((t) => (
-            <blockquote key={t.name} className="rounded-lg bg-neutral-100 p-4 text-sm italic dark:bg-neutral-800">
+            <blockquote key={t.name} className="rounded-lg bg-neutral-100 p-4 text-sm italic">
               “{t.quote}”
               <footer className="mt-3 text-right not-italic font-medium">– {t.name}</footer>
             </blockquote>

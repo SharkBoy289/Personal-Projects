@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     <section className="mx-auto max-w-5xl space-y-8 p-4 sm:p-8">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">My Work</h1>
-        <p className="text-lg text-amber-800 dark:text-neutral-300">
+        <p className="text-lg">
           A selection of past projects and internships.
         </p>
       </div>
