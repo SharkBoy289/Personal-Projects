@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/40 dark:bg-neutral-900/70 dark:supports-[backdrop-filter]:bg-neutral-900/40">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between p-4">
+      <nav className="flex w-full items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text font-bold text-transparent transition-opacity hover:opacity-80"
