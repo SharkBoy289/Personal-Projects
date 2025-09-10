@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center gap-6 text-center">
-      <h1 className="text-5xl font-bold">Artem</h1>
+      <h1 className="text-5xl font-bold">Artem Zagaynov</h1>
       <p className="max-w-xl text-lg">
         Full‑stack developer crafting fast, responsive experiences across the
         web.

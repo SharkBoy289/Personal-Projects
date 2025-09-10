@@ -99,7 +99,7 @@ export default function AboutPage() {
         <h2 className="mb-6 text-2xl font-semibold">Testimonials</h2>
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((t) => (
-            <blockquote key={t.name} className="rounded-lg bg-neutral-100 p-4 text-sm italic">
+            <blockquote key={t.name} className="rounded-lg p-4 text-sm italic">
               “{t.quote}”
               <footer className="mt-3 text-right not-italic font-medium">– {t.name}</footer>
             </blockquote>
