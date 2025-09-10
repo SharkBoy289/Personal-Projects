@@ -8,6 +8,7 @@ const ContentSecurityPolicy = `
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   img-src 'self' https://images.unsplash.com https://placehold.co data:;
   font-src 'self' https://fonts.gstatic.com data:;
+  frame-src 'self' https://vercel.live;
 `;
 
 const nextConfig: NextConfig = {
