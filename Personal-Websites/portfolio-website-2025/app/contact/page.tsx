@@ -14,7 +14,7 @@ export default function ContactPage() {
   const [sent, setSent] = useState(false);
 
   return (
-    <section className="mx-auto max-w-5xl grid gap-8 p-4 sm:p-8 md:grid-cols-2">
+    <section className="mx-auto grid max-w-screen-xl gap-8 p-4 sm:p-8 md:grid-cols-2 xl:gap-12">
       <form
         className="space-y-4"
         onSubmit={(e) => {

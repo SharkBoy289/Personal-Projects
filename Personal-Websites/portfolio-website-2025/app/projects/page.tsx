@@ -4,14 +4,14 @@ import { work } from "@/data/work";
 
 export default function ProjectsPage() {
   return (
-    <section className="mx-auto max-w-5xl space-y-8 p-4 sm:p-8">
+    <section className="mx-auto max-w-screen-xl space-y-8 p-4 sm:p-8">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">My Work</h1>
         <p className="text-lg">
           A selection of past projects and internships.
         </p>
       </div>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {work.map((p) => (
           <Link
             key={p.slug}
