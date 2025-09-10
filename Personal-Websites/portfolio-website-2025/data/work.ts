@@ -11,76 +11,194 @@ export type WorkItem = {
 
 export const work: WorkItem[] = [
   {
-    slug: "responsive-app",
-    title: "Responsive Web App",
-    scope: "Full‑stack project",
+    slug: "minecraft-clone",
+    title: "Minecraft Clone",
+    scope: "WebGL game",
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=60",
     description:
-      "A performant web application demonstrating responsive layouts and fast loading techniques.",
+      "Voxel-style world built in WebGL with procedurally generated terrain.",
+    year: "2025",
+    type: "project",
+    details: [
+      "Goal: Chunked rendering engine",
+      "Goal: Per-block physics",
+      "Goal: Saveable worlds",
+    ],
+  },
+  {
+    slug: "chess-solver",
+    title: "Chess Solutions Algorithm",
+    scope: "Algorithm project",
+    image:
+      "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=800&q=60",
+    description:
+      "Searches for optimal moves using minimax and heuristic pruning.",
     year: "2024",
     type: "project",
-    details: ["Goal: Optimize Core Web Vitals", "Goal: Mobile‑first UX", "Goal: Deployed with CI/CD"],
+    details: [
+      "Goal: Minimax with alpha-beta pruning",
+      "Goal: FEN board parser",
+      "Goal: Visual move explorer",
+    ],
   },
   {
-    slug: "design-system",
-    title: "Design System Internship",
-    scope: "UI component library",
+    slug: "dining-hall",
+    title: "Dining Hall — Nutrition & History",
+    scope: "Full‑stack site",
     image:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=60",
-    description:
-      "Collaborated on a scalable design system used across multiple products.",
-    year: "2023",
-    type: "internship",
-    details: ["Role: Built accessible components", "Role: Wrote Storybook docs", "Role: Led design reviews"],
-  },
-  {
-    slug: "data-visualizer",
-    title: "Data Visualizer",
-    scope: "Interactive charts",
-    image:
-      "https://images.unsplash.com/photo-1531497865144-0464ef8fb40e?auto=format&fit=crop&w=800&q=60",
-    description:
-      "Visualization tool turning raw metrics into animated dashboards.",
-    year: "2022",
+      "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=60",
+    description: "Aggregates campus menus and tracks meal ratings.",
+    year: "2024",
     type: "project",
-    details: ["Goal: Real‑time updates", "Goal: Export to CSV", "Goal: Custom theming"],
+    details: [
+      "Goal: Menu scraping with Puppeteer",
+      "Goal: Firebase auth & storage",
+      "Goal: Nutrition analytics",
+    ],
   },
   {
-    slug: "ux-research",
-    title: "UX Research Assistant",
-    scope: "Research internship",
+    slug: "pet-sorting-ai",
+    title: "Pet Sorting AI",
+    scope: "Machine learning",
     image:
-      "https://images.unsplash.com/photo-1537432376769-00a7d6b1e619?auto=format&fit=crop&w=800&q=60",
-    description:
-      "Supported user studies and prototyping for a mobile application.",
-    year: "2021",
-    type: "internship",
-    details: ["Role: Conducted surveys", "Role: Built hi‑fi prototypes", "Role: Presented findings"],
+      "https://images.unsplash.com/photo-1558944351-6611233c3d38?auto=format&fit=crop&w=800&q=60",
+    description: "Classifies pet images into breeds and categories.",
+    year: "2024",
+    type: "project",
+    details: [
+      "Goal: Convolutional model",
+      "Goal: Real‑time inference",
+      "Goal: Data augmentation pipeline",
+    ],
   },
   {
-    slug: "game-engine",
-    title: "Mini Game Engine",
-    scope: "Graphics project",
+    slug: "pet-data-analyzer",
+    title: "Pet Sorting Data Analyzer",
+    scope: "Analytics tool",
+    image:
+      "https://images.unsplash.com/photo-1518972559570-1ecb7db0cfd2?auto=format&fit=crop&w=800&q=60",
+    description:
+      "Dashboard for evaluating model accuracy and dataset quality.",
+    year: "2024",
+    type: "project",
+    details: [
+      "Goal: Confusion matrix reports",
+      "Goal: Dataset cleaning",
+      "Goal: Exportable metrics",
+    ],
+  },
+  {
+    slug: "solar-system",
+    title: "Solar System Visualizer",
+    scope: "Three.js demo",
+    image:
+      "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=60",
+    description:
+      "Interactive 3D model of planets and orbits built with Three.js.",
+    year: "2023",
+    type: "project",
+    details: [
+      "Goal: Scale-accurate orbits",
+      "Goal: Planet textures",
+      "Goal: Adjustable time speeds",
+    ],
+  },
+  {
+    slug: "data-types-visualizer",
+    title: "Data Types Visualizer",
+    scope: "Learning app",
+    image:
+      "https://images.unsplash.com/photo-1559028012-481c2100243f?auto=format&fit=crop&w=800&q=60",
+    description:
+      "Teaches programming data types through interactive visuals and exercises.",
+    year: "2023",
+    type: "project",
+    details: [
+      "Goal: Animated memory diagrams",
+      "Goal: Quiz mode",
+      "Goal: Beginner-friendly lessons",
+    ],
+  },
+  {
+    slug: "pathways",
+    title: "Pathways Career Planner",
+    scope: "Agent-powered web app",
     image:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60",
     description:
-      "Lightweight engine showcasing physics and sprite animation.",
-    year: "2020",
+      "Guides students through college and career steps with web scraping and AI agents.",
+    year: "2025",
     type: "project",
-    details: ["Goal: Entity system", "Goal: Physics integration", "Goal: Level editor"],
+    details: [
+      "Goal: Personalized pathway profiles",
+      "Goal: Calendar of deadlines",
+      "Goal: Soft web scraping for up-to-date info",
+    ],
   },
   {
-    slug: "automation-coop",
-    title: "Automation Co‑op",
-    scope: "Tooling internship",
+    slug: "swift-habit-tracker",
+    title: "Swift Habit Tracker",
+    scope: "iOS app",
     image:
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1517242022622-8843f196b4a6?auto=format&fit=crop&w=800&q=60",
     description:
-      "Built internal tools to streamline deployment pipelines.",
-    year: "2019",
-    type: "internship",
-    details: ["Role: Created CLI utilities", "Role: Improved build times", "Role: Monitored metrics"],
+      "Tracks daily habits with sleep, location, and calendar data plus summary widgets.",
+    year: "2025",
+    type: "project",
+    details: [
+      "Goal: Integrate HealthKit and Calendar",
+      "Goal: Daily email summaries",
+      "Goal: Home screen widget",
+    ],
+  },
+  {
+    slug: "russian-word-widget",
+    title: "Russian Word of the Day",
+    scope: "iOS widget",
+    image:
+      "https://images.unsplash.com/photo-1554384645-13eab165c24b?auto=format&fit=crop&w=800&q=60",
+    description:
+      "Delivers a daily Russian word with selectable difficulty levels.",
+    year: "2025",
+    type: "project",
+    details: [
+      "Goal: Levels A1–C2",
+      "Goal: Offline pronunciation audio",
+      "Goal: Widget support",
+    ],
+  },
+  {
+    slug: "seagull-avionics",
+    title: "Seagull Avionics",
+    scope: "Hardware project",
+    image:
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=60",
+    description:
+      "Developed avionics stack for a custom Seagull UAV platform.",
+    year: "2023",
+    type: "project",
+    details: [
+      "Goal: Sensor fusion for flight control",
+      "Goal: Telemetry link",
+      "Goal: Modular PCB design",
+    ],
+  },
+  {
+    slug: "vcpms-maine",
+    title: "VCPMS Maine Website",
+    scope: "Angular site",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=60",
+    description:
+      "State-wide web portal built with Angular for VCPMS Maine.",
+    year: "2024",
+    type: "project",
+    details: [
+      "Goal: Responsive UI",
+      "Goal: API-driven content",
+      "Goal: Role-based auth",
+    ],
   },
 ];
 
