@@ -12,7 +12,7 @@ const services = [
     desc: "Human‑centered product design.",
   },
   {
-    title: "Consulting",
+    title: "Avionics",
     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=60",
     desc: "Helping teams ship faster.",
   },
