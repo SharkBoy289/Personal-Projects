@@ -45,11 +45,12 @@ export default function AboutPage() {
     <div className="mx-auto max-w-5xl space-y-16 p-4 sm:p-8">
       <section className="flex flex-col items-center gap-8 md:flex-row">
         <Image
-          src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=400&q=60"
-          alt="Portrait of Artem"
+          src="/Artem%20Photos/SlightSmile.jpeg"
+          alt="Portrait of Artem Zagaynov"
           width={300}
           height={300}
           className="rounded-full object-cover"
+          priority
         />
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-bold">Hi, I&apos;m Artem</h1>

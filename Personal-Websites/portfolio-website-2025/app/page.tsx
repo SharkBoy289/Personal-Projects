@@ -9,7 +9,7 @@ export default function Home() {
         alt="Portrait of Artem Zagaynov"
         width={200}
         height={200}
-        className="rounded-full"
+        className="rounded-full object-cover"
         priority
       />
       <h1 className="text-5xl font-bold">Artem Zagaynov</h1>
